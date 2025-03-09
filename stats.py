@@ -12,3 +12,12 @@ def get_num_chars(book_text):
             else:
                 char_count[lower_text] = 1
     return char_count
+
+def list_char_counts(char_count_dict):
+    dict_list = []
+    for key, value in char_count_dict.items():
+        dict_list.append({"letter": key, "count": value})
+    return dict_list
+
+def sort_list(item):
+    return item["count"]
